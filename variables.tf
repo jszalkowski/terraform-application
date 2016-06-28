@@ -27,6 +27,11 @@ variable "tier" {
   description = "application tier"
 }
 
+variable "internal" {
+  type = "string"
+  description = "flag for internal application pool"
+}
+
 variable "instance_profile_name" {
   type = "string"
   description = "instance profile for ELB registration"
