@@ -6,7 +6,7 @@ resource "template_file" "container-definitions" {
   template = "${file("${path.module}/container_definitions/container_definition.json")}"
   vars {
     container_name = "${var.app_name}${var.app_version}-${var.environment}-${var.tier}-container"
-    container_image = "${var.image}"
+    container_image = "${var.container_image}"
     container_memory = "${var.container_memory}"
     container_cpu = "${var.container_cpu}"
     host_port = "${var.instance_port}"
