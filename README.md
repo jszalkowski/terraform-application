@@ -28,6 +28,7 @@ Name | Description | Default
 `instance_port` | instance port | |
 `instance_protocol` | instance protocol | http
 `instance_type` | instance type for hosts | |
+`internal` | flag for internal application pool | |
 `lb_port` | load balancer port | |
 `lb_protocol` | load balancer protocol | |
 `pool_size` | number of instances in pool | |
