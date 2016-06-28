@@ -32,7 +32,6 @@ Name | Description | Default
 `lb_protocol` | load balancer protocol | |
 `pool_size` | number of instances in pool | |
 `region` | region to configure | |
-`s3_remote_bucket` | S3 bucket for state files | |
 `ssh_user` | user for SSH access | ec2-user
 `tier` | application tier | |
 

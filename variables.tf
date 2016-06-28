@@ -27,11 +27,6 @@ variable "tier" {
   description = "application tier"
 }
 
-variable "s3_remote_bucket" {
-  type = "string"
-  description = "S3 bucket for state files"
-}
-
 variable "instance_profile_name" {
   type = "string"
   description = "instance profile for ELB registration"
