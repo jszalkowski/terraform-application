@@ -24,6 +24,8 @@ Name | Description | Default
 `container_memory` | container memory (MB) | |
 `container_port` | container port | 80
 `environment` | environment to configure | |
+`host_security_group_id` | security group IDs for the host pool | |
+`host_subnet_ids` | list of subnet IDs for the host pool | |
 `image` | image for hosts | |
 `instance_port` | instance port | |
 `instance_protocol` | instance protocol | http
@@ -31,6 +33,8 @@ Name | Description | Default
 `internal` | flag for internal application pool | |
 `lb_port` | load balancer port | |
 `lb_protocol` | load balancer protocol | |
+`lb_security_group_id` | security group ID for the load balancer | |
+`lb_subnet_ids` | list of subnet IDs for the load balancer | |
 `pool_size` | number of instances in pool | |
 `region` | region to configure | |
 `ssh_user` | user for SSH access | ec2-user

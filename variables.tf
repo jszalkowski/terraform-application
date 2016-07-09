@@ -44,12 +44,12 @@ variable "service_role_arn" {
 
 variable "lb_subnet_ids" {
   type = "string"
-  description = "list of private subnet IDs for the load balancer"
+  description = "list of subnet IDs for the load balancer"
 }
 
 variable "host_subnet_ids" {
   type = "string"
-  description = "list of private subnet IDs for the host pool"
+  description = "list of subnet IDs for the host pool"
 }
 
 variable "lb_security_group_id" {
