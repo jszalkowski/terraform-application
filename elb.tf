@@ -4,8 +4,8 @@
 
 resource "aws_elb" "load-balancer" {
   name = "${var.app_name}${var.app_version}-${var.environment}-${var.tier}-lb"
-  security_groups = ["${var.public_web_security_group_id}"]
-  subnets = ["${split(",", var.public_subnet_ids)}"]
+  security_groups = ["${var.lb_security_group_id}"]
+  subnets = ["${split(",", var.lb_subnet_ids)}"]
   internal = "${var.internal}"
   cross_zone_load_balancing = true
   connection_draining = true

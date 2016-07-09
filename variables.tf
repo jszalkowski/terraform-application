@@ -42,24 +42,24 @@ variable "service_role_arn" {
   description = "service role for ECS registration"
 }
 
-variable "public_subnet_ids" {
+variable "lb_subnet_ids" {
   type = "string"
-  description = "list of public subnet IDs"
+  description = "list of subnet IDs for the load balancer"
 }
 
-variable "private_subnet_ids" {
+variable "host_subnet_ids" {
   type = "string"
-  description = "list of private subnet IDs"
+  description = "list of subnet IDs for the host pool"
 }
 
-variable "public_web_security_group_id" {
+variable "lb_security_group_id" {
   type = "string"
-  description = "public security group ID"
+  description = "security group ID for the load balancer"
 }
 
-variable "internal_security_group_id" {
+variable "host_security_group_id" {
   type = "string"
-  description = "private security group ID"
+  description = "security group IDs for the host pool"
 }
 
 variable "az_count" {
