@@ -7,7 +7,7 @@ resource "aws_launch_configuration" "launch-configuration" {
   image_id = "${var.image}"
   instance_type = "${var.instance_type}"
   iam_instance_profile = "${var.instance_profile_name}"
-  security_groups = ["${var.internal_security_group_id}"]
+  security_groups = ["${var.host_security_group_id}"]
   user_data = "${template_file.ecs-user-data.rendered}"
   lifecycle {
     create_before_destroy = true
